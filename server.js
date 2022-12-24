@@ -23,8 +23,10 @@ https.get(url,function(response){
         const weatherData = JSON.parse(data);
         const temp = weatherData.main.temp;
         const weatherDescription = weatherData.weather[0].main;
-        res.write("<h1>The present temprature is :"+ temp  +".</h1>");
-        res.write("present the weather is " + weatherDescription);
+        const windSpeed = weatherData.wind.speed;
+        res.write("<h1>The present temprature in "+ query +" is :"+ temp  +" Kelvin.</h1>");
+        res.write("The present weather situation is  " + weatherDescription);
+        res.write("The wind speed is :"+ windSpeed +"")
         res.send()
     });
 });
