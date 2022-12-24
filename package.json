@@ -1,0 +1,24 @@
+{
+  "name": "weather-report-",
+  "version": "1.0.0",
+  "description": "An application using A.P.I",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bogeshwararao/Weather-Report-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bogeshwararao/Weather-Report-/issues"
+  },
+  "homepage": "https://github.com/Bogeshwararao/Weather-Report-#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
