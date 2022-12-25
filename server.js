@@ -25,7 +25,7 @@ https.get(url,function(response){
         const weatherDescription = weatherData.weather[0].main;
         const windSpeed = weatherData.wind.speed;
         res.write("<h1>The present temprature in "+ query +" is :"+ temp  +" Kelvin.</h1>");
-        res.write("<h4>The present weather situation is </h4> " + weatherDescription);
+        res.write("<h2>The present weather situation is </h2> " + weatherDescription);
         res.write("The wind speed is :"+ windSpeed +"")
         res.send()
     });
